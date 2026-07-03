@@ -7,7 +7,8 @@ Key points:
 - **Framework:** MERN 
 - **Concepts learned:** REST API, database setup, rate limiting, middleware, CSS libraries, CORS
 - **Features:** 3 pages, view/edit/delete notes, clean UI--intuitive 
-- **How to run:** run this link in a web browser: https://mern-thinkboard-r80l.onrender.com/
+- **Visit** https://mern-thinkboard-r80l.onrender.com/
+-           note: because this is deployed via free Render.com, every 15 minutes, web service with inactivate and take a couple of minutes to spin up again
 
 Cite:
 freeCodeCamp.org. “MERN Stack Tutorial for Beginners with Deployment – 2025.” YouTube, 
