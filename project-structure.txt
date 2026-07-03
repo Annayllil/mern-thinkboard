@@ -1,0 +1,44 @@
+mern-thinkboard/                      | Main project folder
+├── package.json                        | Root project config and scripts
+├── README.md                           | Project overview and setup notes
+├── .gitignore                          | Ignores unnecessary files in Git
+├── backend/                            | Server-side API and database logic
+│   ├── package.json                      | Backend dependencies and scripts
+│   └── src/                              | Backend source code
+│       ├── server.js                       | Starts the Express server
+│       ├── config/                         | Environment and database configuration
+│       │   ├── db.js                         | Database connection setup
+│       │   └── upstash.js                    | Upstash-related config
+│       ├── controllers/                    | Request handling logic
+│       │   └── notesControllers.js           | CRUD operations for notes
+│       ├── middleware/                     | Reusable request middleware
+│       │   └── rateLimiter.js                | Limits repeated API requests
+│       ├── models/                         | Database schemas and models
+│       │   └── Note.js                       | Note data model
+│       └── routes/                         | API endpoint definitions
+│           └── notesRoutes.js                | Routes for note-related requests
+└── frontend/                           | Client-side UI and app experience
+    ├── package.json                      | Frontend dependencies and scripts
+    ├── index.html                        | Main HTML entry point
+    ├── postcss.config.js                 | PostCSS styling config
+    ├── tailwind.config.js                | Tailwind CSS setup
+    ├── vite.config.js                    | Vite development server config
+    ├── eslint.config.js                  | Linting rules for frontend
+    ├── public/                           | Static assets served directly
+    └── src/                              | Frontend source code
+        ├── App.jsx                         | Main app component and routing
+        ├── main.jsx                        | React app entry point
+        ├── index.css                       | Global styles and Tailwind imports
+        ├── assets/                         | Images and static media
+        ├── components/                     | Reusable UI building blocks
+        │   ├── Navbar.jsx                    | Top navigation bar
+        │   ├── NoteCard.jsx                  | Card UI for displaying notes
+        │   ├── NotesNotFound.jsx             | Empty-state component
+        │   └── RateLimitedUI.jsx             | UI shown when rate limit is reached
+        ├── lib/                            | Helper modules and API utilities
+        │   ├── axios.js                      | Configured API client
+        │   └── utils.js                      | Small reusable helper functions
+        └── pages/                          | Main page views for the app
+            ├── CreatePage.jsx                | Page for creating notes
+            ├── HomePage.jsx                  | Homepage displaying notes
+            └── NoteDetailPage.jsx            | Page for viewing a single note
